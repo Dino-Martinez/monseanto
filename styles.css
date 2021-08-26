@@ -1,0 +1,42 @@
+* {
+  transition: all 0.1s ease;
+}
+
+html {
+  --clr-background: #fff;
+  --clr-text: #000;
+}
+html[data-theme=dark] {
+  --clr-background: #000;
+  --clr-text: #fff;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  background: var(--clr-background);
+  color: var(--clr-text);
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+#lightToggle {
+  display: none;
+}
+
+#themeSwitcher {
+  border: 1px solid var(--clr-text);
+  border-radius: 50%;
+  padding: 0.5em;
+  background: none;
+  color: var(--clr-text);
+}
+#themeSwitcher:hover {
+  cursor: pointer;
+  background: var(--clr-text);
+  color: var(--clr-background);
+}
+
+/*# sourceMappingURL=styles.css.map */
